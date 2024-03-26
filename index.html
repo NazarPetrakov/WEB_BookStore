@@ -1,70 +1,211 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BookStore</title>
+    <title>Website Layout</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/63ff5268f1.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <img src="imgs/logo.png" alt="logo" />
-      <h1>Book Store</h1>
-      <form action="/search" method="GET">
-        <input type="text" name="search" placeholder="Search" />
-      </form>
+      <div class="logo"><img src="imgs/logo.png" alt="" /></div>
+      <div class="search">
+        <input type="text" placeholder="Search" />
+      </div>
+      <div class="buttons">
+        <button><i class="fa-solid fa-user"></i></button>
+        <button><i class="fa-solid fa-heart"></i></button>
+        <button><i class="fa-solid fa-cart-shopping"></i></button>
+      </div>
     </header>
+
     <main>
-      <h2>Best Seller</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Author</th>
-            <th>Price</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>A Song of Ice and Fire</td>
-            <td>George R. R. Martin</td>
-            <td>87,75 $</td>
-          </tr>
-          <tr>
-            <td>1984</td>
-            <td>George Orwell</td>
-            <td>35,75 $</td>
-          </tr>
-          <tr>
-            <td>Crooked House</td>
-            <td>Agatha Christie</td>
-            <td>36,00 $</td>
-          </tr>
-          <tr>
-            <td>Metafizik</td>
-            <td>Aristoteles</td>
-            <td>36,00 $</td>
-          </tr>
-        </tbody>
+      <div id="carousel">
+        <img src="imgs/disc_book_1.jpg" alt="disc_book_1" />
+        <div class="overlay">
+          <h2>
+            <span>25% discount</span><br />
+            all Agatha Christie <br />
+            books!
+          </h2>
+        </div>
+      </div>
+      <section>
+        <div class="books_title">
+          <div><h2>Best Seller</h2></div>
+          <div><a href="">View All</a></div>
+        </div>
+        <div class="books_block">
+          <div class="book_info">
+            <div class="book_photo"><img src="imgs/book1.png" alt="" /></div>
+            <div class="book_details">
+              <div class="book_name">
+                A Song of Ice and Fire <br />George R. R. Martin
+              </div>
+              <div class="book_price">87,75 $</div>
+            </div>
+          </div>
+          <div class="book_info">
+            <div class="book_photo"><img src="imgs/book2.png" alt="" /></div>
+            <div class="book_details">
+              <div class="book_name">1984 <br />George Orwell</div>
+              <div class="book_price">35,75 $</div>
+            </div>
+          </div>
+          <div class="book_info">
+            <div class="book_photo"><img src="imgs/book3.png" alt="" /></div>
+            <div class="book_details">
+              <div class="book_name">Crooked House <br />Agatha Christie</div>
+              <div class="book_price">36,00 $</div>
+            </div>
+          </div>
+          <div class="book_info">
+            <div class="book_photo"><img src="imgs/book4.png" alt="" /></div>
+            <div class="book_details">
+              <div class="book_name">Metafizik <br />Aristoteles</div>
+              <div class="book_price">36,00 $</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="books_title">
+          <div><h2>Best Seller</h2></div>
+          <div><a href="">View All</a></div>
+        </div>
+        <div class="books_block">
+          <div class="book_info">
+            <div class="book_photo"><img src="imgs/book1.png" alt="" /></div>
+            <div class="book_details">
+              <div class="book_name">
+                A Song of Ice and Fire <br />George R. R. Martin
+              </div>
+              <div class="book_price">87,75 $</div>
+            </div>
+          </div>
+          <div class="book_info">
+            <div class="book_photo"><img src="imgs/book2.png" alt="" /></div>
+            <div class="book_details">
+              <div class="book_name">1984 <br />George Orwell</div>
+              <div class="book_price">35,75 $</div>
+            </div>
+          </div>
+          <div class="book_info">
+            <div class="book_photo"><img src="imgs/book3.png" alt="" /></div>
+            <div class="book_details">
+              <div class="book_name">Crooked House <br />Agatha Christie</div>
+              <div class="book_price">36,00 $</div>
+            </div>
+          </div>
+          <div class="book_info">
+            <div class="book_photo"><img src="imgs/book4.png" alt="" /></div>
+            <div class="book_details">
+              <div class="book_name">Metafizik <br />Aristoteles</div>
+              <div class="book_price">36,00 $</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="books_title">
+          <div><h2>Best Seller</h2></div>
+          <div><a href="">View All</a></div>
+        </div>
+        <div class="books_block">
+          <div class="book_info">
+            <div class="book_photo"><img src="imgs/book1.png" alt="" /></div>
+            <div class="book_details">
+              <div class="book_name">
+                A Song of Ice and Fire <br />George R. R. Martin
+              </div>
+              <div class="book_price">87,75 $</div>
+            </div>
+          </div>
+          <div class="book_info">
+            <div class="book_photo"><img src="imgs/book2.png" alt="" /></div>
+            <div class="book_details">
+              <div class="book_name">1984 <br />George Orwell</div>
+              <div class="book_price">35,75 $</div>
+            </div>
+          </div>
+          <div class="book_info">
+            <div class="book_photo"><img src="imgs/book3.png" alt="" /></div>
+            <div class="book_details">
+              <div class="book_name">Crooked House <br />Agatha Christie</div>
+              <div class="book_price">36,00 $</div>
+            </div>
+          </div>
+          <div class="book_info">
+            <div class="book_photo"><img src="imgs/book4.png" alt="" /></div>
+            <div class="book_details">
+              <div class="book_name">Metafizik <br />Aristoteles</div>
+              <div class="book_price">36,00 $</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <table id="books">
+        <tr>
+          <th>Name</th>
+          <th>Author</th>
+          <th>Price</th>
+        </tr>
+        <tr>
+          <td>A Song of Ice and Fire</td>
+          <td>George R. R. Martin</td>
+          <td>87,75 $</td>
+        </tr>
+        <tr>
+          <td>1984</td>
+          <td>George Orwell</td>
+          <td>35,75 $</td>
+        </tr>
+        <tr>
+          <td>Crooked House</td>
+          <td>Agatha Christie</td>
+          <td>36,00 $</td>
+        </tr>
+        <tr>
+          <td>Metafizik</td>
+          <td>Aristoteles</td>
+          <td>36,00 $</td>
+        </tr>
+        <tr>
+          <td>Romeo ve Juliet</td>
+          <td>William Shakespeare</td>
+          <td>87,75 $</td>
+        </tr>
+        <tr>
+          <td>Olağanüstü Bir Gece</td>
+          <td>Stefan Zweig</td>
+          <td>35,75 $</td>
+        </tr>
+        <tr>
+          <td>Zaman Makinesi</td>
+          <td>H. G. Wells</td>
+          <td>36,00 $</td>
+        </tr>
+        <tr>
+          <td>Genç Werther’in Acıları</td>
+          <td>Goethe</td>
+          <td>36,00 $</td>
+        </tr>
       </table>
-      <a href="BestSeller.html">View All</a>
-      <h2>Classics</h2>
       <ol>
-        <li>Romeo ve Juliet - 87,75 $</li>
-        <li>Olağanüstü Bir Gece - 35,75 $</li>
-        <li>Zaman Makinesi - 36,00 $</li>
-        <li>Genç Werther’in Acıları - 36,00 $</li>
+        <li>Best Seller</li>
+        <li>Classics</li>
+        <li>Children</li>
       </ol>
-      <a href="Classics.html">View All</a>
-      <h2>Children</h2>
+
       <ul>
-        <li><a href="Mor.html">Mor Bir Fil Gördüm Sanki!</a> (87,75 $)</li>
-        <li><a href="Alev.html">Alev Saçlı Çocuk</a> (35,75 $)</li>
-        <li><a href="Melodi.html">Melodi</a> (36,00 $)</li>
-        <li><a href="Siber.html">Siber Kahramanlar</a> (36,00 $)</li>
+        <li>Best Seller</li>
+        <li>Classics</li>
+        <li>Children</li>
       </ul>
-      <a href="Children.html">View All</a>
     </main>
-    <footer>
-      <p>&copy; 2024 Book Store. Усі права захищено.</p>
-    </footer>
   </body>
 </html>
