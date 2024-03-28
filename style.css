@@ -46,23 +46,37 @@ img + .overlay {
 }
 
 .search {
+  position: relative;
+  display: inline-block;
 }
 
-.search input {
-  width: 700px;
-  padding: 5px;
-  margin-right: 10px;
+.search input[type="text"] {
+  width: 800px; /* регулюйте ширину поля пошуку за потребою */
+  height: 24px;
+  padding: 8px 32px; /* внутрішні відступи для зручності */
+  border: none; /* межа чорного кольору */
+  border-radius: 6px; /* закруглені кути */
+  outline: none; /* приховати рамку фокусу */
+  background-color: #fff5f4;
 }
 
-.search button {
-  padding: 5px 10px;
+.search input[type="text"]::placeholder {
+  color: rgba(9, 9, 55, 0.4); /* колір тексту заповнювача */
+  font-size: 16px;
 }
 
+.search input[type="text"]:focus {
+  background-color: #fff5ee;
+}
+
+.search i {
+  color: rgba(9, 9, 55, 0.4);
+  position: absolute;
+  left: 10px; /* Adjust the position of the icon */
+  top: 50%;
+  transform: translateY(-50%);
+}
 .buttons {
-}
-
-.buttons button {
-  margin-left: 10px;
 }
 
 main {
@@ -77,14 +91,20 @@ section {
   flex: 1;
   width: 100%;
   padding: 20px;
-  background-color: #e0e0e0;
   margin: 10px 0;
-  border: 2px solid rgb(191, 191, 191);
   border-radius: 15px 50px;
 }
 .books_title {
   display: flex;
   justify-content: space-between;
+}
+.books_title a {
+  font-size: 20px;
+  font-weight: normal;
+  color: #563f11;
+}
+.books_title a:hover {
+  color: #a37822;
 }
 
 .books_block {
@@ -94,80 +114,47 @@ section {
 
 .book_info {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin-bottom: 10px;
+  background-color: #fff5f4;
+  width: 273px;
+  padding: 10px;
+  font-size: 18px;
+  color: #251a04;
+  border-radius: 10px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+}
+.author_span {
+  font-size: 15px;
+  padding-top: 10px;
+  color: #4b3e11;
+  opacity: 0.6;
+}
+.price_span {
+  font-size: 22px;
+  color: #8d5522;
 }
 .book_photo img {
   width: 140px;
   height: 220px;
+  padding-right: 10px;
 }
 
 .book_details {
   /*flex: 1;*/
-  margin-left: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-bottom: 20px;
 }
 
 .book_name,
 .book_price {
 }
 
-#books {
-  font-family: Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  margin-bottom: 40px;
-}
-
-#books td,
-#books th {
-  border: 1px solid #ddd;
-  padding: 8px;
-}
-
-#books tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-#books tr:hover {
-  background-color: #ddd;
-}
-
-#books th {
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #f0b861;
-  color: white;
-}
-ol {
-  background-color: #f0b861;
-  padding: 20px;
-  width: 100%;
-}
-
-ul {
-  background-color: #d59c41;
-  padding: 20px;
-  width: 100%;
-}
-
-ol li {
-  background-color: #f7f577;
-  padding: 5px;
-  margin-left: 35px;
-}
-
-ul li {
-  background-color: #452202;
-  color: white;
-  margin: 5px;
-}
 .buttons button {
   display: inline-block;
-  padding: 7px 10px;
+  padding: 11px 11px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
@@ -176,8 +163,6 @@ ul li {
   color: black;
   background-color: #fff5f4;
   border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
 }
 .buttons button:hover {
   background-color: #f0b861;
@@ -185,6 +170,9 @@ ul li {
 
 .buttons button:active {
   background-color: #f0b861;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 5px #979797;
   transform: translateY(4px);
+}
+.buttons button {
+  margin-left: 10px;
 }
