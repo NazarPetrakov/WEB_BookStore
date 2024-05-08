@@ -1,8 +1,8 @@
-var textElement = document.getElementById("text");
-var tooltipElement = document.getElementById("tooltip");
+let textElement = document.getElementById("text");
+let tooltipElement = document.getElementById("tooltip");
 
 textElement.addEventListener("mouseover", function (event) {
-  var tooltipText = "Це підказка для тексту вище ";
+  let tooltipText = "Це підказка для тексту вище ";
   showTooltip(event.clientX, event.clientY, tooltipText);
 });
 
