@@ -9,7 +9,7 @@ let min = Math.min(...array);
 
 let minIndex = array.indexOf(min);
 
-for (let j = minIndex; j > 0; j--) {
+for (var j = minIndex; j > 0; j--) {
   array[j] = array[j - 1];
 }
 array[0] = min;
@@ -18,15 +18,15 @@ let sortedArray = array.slice();
 
 function selectionSort(arr) {
   let len = arr.length;
-  for (let i = 0; i < len - 1; i++) {
+  for (var i = 0; i < len - 1; i++) {
     let maxIndex = i;
-    for (let j = i + 1; j < len; j++) {
+    for (var j = i + 1; j < len; j++) {
       if (arr[j] > arr[maxIndex]) {
         maxIndex = j;
       }
     }
     if (maxIndex !== i) {
-      let temp = arr[i];
+      var temp = arr[i];
       arr[i] = arr[maxIndex];
       arr[maxIndex] = temp;
     }
